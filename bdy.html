@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('000001.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-position: center;
+      color: white; /* Set text color to white for better visibility on the background image */
+    }
+
+    #birthdayMessage {
+      display: none;
+      font-size: 24px;
+      color: green;
+      animation: fadeIn 2s ease-in-out;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to the message for better visibility */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#" onclick="showBirthdayMessage()">Click here to see the birthday message</a>
+
+<div id="birthdayMessage">
+  <p>🎉 Happy Birthday, Aditya! 🎂</p>
+  <p>Wishing you a fantastic day filled with joy and celebration! This message is made by [Bhashkar Anand].</p>
+</div>
+
+<script>
+  function showBirthdayMessage() {
+    // Get the birthday message element
+    const birthdayMessage = document.getElementById('birthdayMessage');
+
+    // Show the birthday message
+    birthdayMessage.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
+
